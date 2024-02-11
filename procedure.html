@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Application Procedure</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="PUPLogo.png" alt="Logo" class="logo">
+            <div class="school-info">
+                <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+                <p>The COUNTRY'S 1ST POLYTECHNICU</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Idreplacementprice.html"> ID Replacement Price </a></li>
+            <li><a href="procedure.html">Procedure</a></li>
+            <li><a href="form.html">Request Form</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="procedure-container">
+        <div class="procedure-steps">
+            <div class="step" id="step1">
+                <h3>Step 1: Payment</h3>
+                <p>You will receive a payment link via email upon form submission. Please allow 1-3 business days for payment processing.</p>
+                <h4><p> Kindly check the <a href="Idreplacementprice.html">ID Replacement Price</a></p></h4>            </div>
+            <div class="step" id="step2" style="display:none;">
+                <h3>Step 2: Approval, Processing, and Issuance of Request for Duplicate Copy of Identification Card</h3>
+                <p>Office of the Student Services</p>
+                <p>Room 208, Charlie Del Rosario Student Development Center</p>
+                <p>(Please present your latest Registration Certificate)</p>
+            </div>
+        </div>
+        <div class="arrow-navigation">
+            <button onclick="showStep(1)" id="prevBtn" disabled>&#10094; Prev</button>
+            <button onclick="showStep(2)" id="nextBtn">&#10095; Next</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 BSIT 3-1N</p>
+    </footer>
+
+ </body>
+
+</html>

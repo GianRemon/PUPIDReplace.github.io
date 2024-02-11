@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="PUPLogo.png" alt="Logo" class="logo">
+            <div class="school-info">
+                <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+                <p>The COUNTRY'S 1ST POLYTECHNICU</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="Idreplacementprice.html"> ID Replacement Price </a></li>
+            <li><a href="procedure.html">Procedure</a></li>
+            <li><a href="#" id="requestFormLink">Request Form</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="form-container" id="formContainer">
+        <h2>Application for New/Replacement of Identification Card</h2>
+        <form id="idForm" name="Form" method="post" action="https://script.google.com/macros/s/AKfycbwiYU8zrTDhXO7EtVG9DsIHoRObIjY931RXGNAiKQZDe6_zfUDGSMnNOQ3iMazPaVBn/exec"
+    onsubmit="return submitForm()">
+
+            <div class="form-group">
+                <label for="reason">Reason for ID Application:</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Select a reason</option>
+                    <option value="transferee">Transferee</option>
+                    <option value="lateFiling">Late Filing</option>
+                    <option value="oldID">Old ID</option>
+                    <option value="shiftee">Shiftee</option>
+                    <option value="damaged">Damaged</option>
+                    <option value="correction">Correction of Entry</option>
+                    <option value="LHS">LHS</option>
+                    <option value="SHS">SHS</option>
+                    <option value="undergrad">Undergrad</option>
+                    <option value="law">College of Law</option>
+                    <option value="gradSchool">Graduate School</option>
+                    <option value="openUni">Open University</option>
+                    <option value="techInst">Institute of Technology</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="studentNumber">Student Number:</label>
+                <input type="text" id="studentNumber" name="studentNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label class="radio-label" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label class="radio-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-group">
+                <label for="courseYearSection">Course, Yr. & Section:</label>
+                <input type="text" id="courseYearSection" name="courseYearSection" required>
+            </div>
+            <div class="form-group">
+                <label for="homeAddress">Home Address:</label>
+                <input type="text" id="homeAddress" name="homeAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone/Mobile No.:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="emergencyName">In case of emergency, please notify (Name):</label>
+                <input type="text" id="emergencyName" name="emergencyName" required>
+            </div>
+            <div class="form-group">
+                <label for="emergencyPhone">In case of emergency, please notify (Phone/Mobile No.):</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="emergencyAddress">In case of emergency, please notify (Address):</label>
+                <input type="text" id="emergencyAddress" name="emergencyAddress" required>
+            </div>
+            <input type="submit" value="Submit" name="submit">
+
+
+            <p class="warning" id="warningMsg" style="display: none;">Please fill in all required fields.</p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 BSIT 3-1N</p>
+    </footer>
+
+</body>
+
+</html>
